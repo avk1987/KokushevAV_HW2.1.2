@@ -25,22 +25,25 @@
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="startBurronPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="2AI-4H-CoO"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="460-ll-woQ">
                                 <rect key="frame" x="100.66666666666669" y="69" width="213" height="669"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-1Y-PAt">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-1Y-PAt">
                                         <rect key="frame" x="0.0" y="0.0" width="213" height="213"/>
                                         <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="ehq-1Y-PAt" secondAttribute="height" multiplier="1:1" id="KuY-IC-yDz"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxF-Qx-Jyg">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxF-Qx-Jyg">
                                         <rect key="frame" x="0.0" y="228" width="213" height="213"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4P-y4-t4A">
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4P-y4-t4A">
                                         <rect key="frame" x="0.0" y="456" width="213" height="213"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
@@ -51,7 +54,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="evf-9l-efa" secondAttribute="trailing" constant="60" id="7XW-aN-T9h"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="460-ll-woQ" secondAttribute="trailing" constant="100.5" id="KDw-fH-aCO"/>
@@ -65,6 +68,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="greenLight" destination="d4P-y4-t4A" id="Roh-hB-XXF"/>
+                        <outlet property="redLight" destination="ehq-1Y-PAt" id="Fc7-jP-fOo"/>
+                        <outlet property="startButton" destination="evf-9l-efa" id="TU4-NV-aWb"/>
+                        <outlet property="yellowLight" destination="yxF-Qx-Jyg" id="437-KQ-I6V"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
