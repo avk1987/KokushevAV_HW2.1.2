@@ -16,11 +16,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="evf-9l-efa">
-                                <rect key="frame" x="60" y="820" width="294" height="30"/>
+                                <rect key="frame" x="60" y="827" width="294" height="30"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Ive-Gu-rQc"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="Nbu-5J-MXK"/>
+                                    <constraint firstAttribute="height" constant="30" id="YWb-64-xBL"/>
                                 </constraints>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -30,7 +30,7 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="460-ll-woQ">
-                                <rect key="frame" x="100.66666666666669" y="69" width="213" height="669"/>
+                                <rect key="frame" x="100.66666666666669" y="49" width="213" height="669"/>
                                 <subviews>
                                     <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ehq-1Y-PAt">
                                         <rect key="frame" x="0.0" y="0.0" width="213" height="213"/>
@@ -57,13 +57,13 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="evf-9l-efa" secondAttribute="trailing" constant="60" id="7XW-aN-T9h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="evf-9l-efa" secondAttribute="bottom" constant="5" id="JAC-Dm-BEi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="460-ll-woQ" secondAttribute="trailing" constant="100.5" id="KDw-fH-aCO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="evf-9l-efa" secondAttribute="bottom" constant="12" id="Khw-sl-YUM"/>
                             <constraint firstItem="evf-9l-efa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="LY6-1g-Umt"/>
+                            <constraint firstItem="evf-9l-efa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="460-ll-woQ" secondAttribute="bottom" constant="15" id="cOF-pY-925"/>
                             <constraint firstItem="460-ll-woQ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100.5" id="da6-YD-k3z"/>
-                            <constraint firstItem="evf-9l-efa" firstAttribute="top" relation="greaterThanOrEqual" secondItem="460-ll-woQ" secondAttribute="bottom" constant="26" id="ejV-jj-aMD"/>
                             <constraint firstItem="460-ll-woQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eug-lm-jlh"/>
-                            <constraint firstItem="460-ll-woQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="uji-ww-e8q"/>
+                            <constraint firstItem="460-ll-woQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="uji-ww-e8q"/>
                             <constraint firstItem="460-ll-woQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yWC-Gd-gaW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
